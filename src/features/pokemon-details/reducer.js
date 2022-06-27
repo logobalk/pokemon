@@ -45,6 +45,14 @@ const pokemonDetailsReducer = (state = initialState, action) =>
       case GET_TICKER_POKEMON_API_ERROR:
         draft.loading = false;
         draft.error = true;
+        draft.pokemonDetails = {
+          img: "",
+          name: "",
+          weight: "",
+          height: "",
+          colors: "",
+          favorite: false,
+        };
         break;
     }
   });

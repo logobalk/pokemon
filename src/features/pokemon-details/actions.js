@@ -5,7 +5,6 @@ import {
 } from "./constants";
 
 export function getTickerPokemonDetails(pokemonName) {
-  console.log("valuesss===>", pokemonName);
   return {
     type: GET_TICKER_POKEMON_API,
     pokemonName,
